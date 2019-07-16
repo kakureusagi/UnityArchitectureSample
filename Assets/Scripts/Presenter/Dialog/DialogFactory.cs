@@ -1,5 +1,7 @@
 using UnityEngine;
 
+#pragma warning disable 0649
+
 namespace MvpSample {
 
 	public class DialogFactory : MonoBehaviour, IDialogFactory {

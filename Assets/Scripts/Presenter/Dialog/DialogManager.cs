@@ -3,6 +3,8 @@ using UniRx;
 using UniRx.Triggers;
 using UnityEngine;
 
+#pragma warning disable 0649
+
 namespace MvpSample {
 
 	public class DialogManager : MonoBehaviour {
