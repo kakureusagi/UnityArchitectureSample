@@ -478,3 +478,17 @@ sysinfo.txt
 
 
 # End of https://www.gitignore.io/api/rider,unity,csharp
+
+
+
+
+
+# UniRx
+Assets/Plugins/UniRx/
+Assets/Plugins/UniRx.meta
+
+
+# UniTask
+Assets/UniRx.Async/
+Assets/UniRx.Async.meta
+
