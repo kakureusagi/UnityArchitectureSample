@@ -26,7 +26,8 @@ namespace MvpSample {
 
 		
 		void Awake() {
-			Factory<OneButtonDialogUseCsae>.PrefabPath = "OneButtonDialog";
+			Factory<OneButtonDialogUseCase>.PrefabPath = "OneButtonDialog";
+			Factory<TwoButtonDialogUseCase>.PrefabPath = "TwoButtonDialog";
 		}
 
 		void IDialogFactory.Create<TModel>(TModel model) {

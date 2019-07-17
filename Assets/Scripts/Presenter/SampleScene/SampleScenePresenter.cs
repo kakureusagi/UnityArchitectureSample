@@ -9,7 +9,10 @@ namespace MvpSample {
 	public class SampleScenePresenter : MonoBehaviour {
 		
 		[SerializeField]
-		private Button dialogButton;
+		private Button oneDialogButton;
+		
+		[SerializeField]
+		private Button twoDialogButton;
 
 		SampleSceneUseCase useCase;
 
@@ -19,8 +22,12 @@ namespace MvpSample {
 		}
 
 		public void Run() {
-			dialogButton.OnClickAsObservable()
-				.Subscribe(_ => useCase.OnDialogButton())
+			oneDialogButton.OnClickAsObservable()
+				.Subscribe(_ => useCase.OnOneDialogButton())
+				.AddTo(this);
+			
+			twoDialogButton.OnClickAsObservable()
+				.Subscribe(_ => useCase.OnTwoButtonDialogButton())
 				.AddTo(this);
 		}
 	}
