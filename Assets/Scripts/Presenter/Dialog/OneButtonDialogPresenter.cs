@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace MvpSample {
 
-	public class OneButtonDialogPresenter : DialogPresenterBase<OneButtonDialogUseCsae> {
+	public class OneButtonDialogPresenter : DialogPresenterBase<OneButtonDialogUseCase> {
 		
 		[SerializeField]
 		Text title;
