@@ -11,16 +11,16 @@ namespace MvpSample {
 		[SerializeField]
 		private Button dialogButton;
 
-		SampleSceneModel model;
+		SampleSceneUseCase useCase;
 
 		
-		public void Initialize(SampleSceneModel model) {
-			this.model = model;
+		public void Initialize(SampleSceneUseCase useCase) {
+			this.useCase = useCase;
 		}
 
 		public void Run() {
 			dialogButton.OnClickAsObservable()
-				.Subscribe(_ => model.OnDialogButton())
+				.Subscribe(_ => useCase.OnDialogButton())
 				.AddTo(this);
 		}
 	}

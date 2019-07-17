@@ -7,7 +7,7 @@ namespace MvpSample {
 
 	}
 	
-	public abstract class DialogPresenterBase<TModel> : DialogPresenterBase where TModel : DialogModelBase {
+	public abstract class DialogPresenterBase<TModel> : DialogPresenterBase where TModel : DialogUseCsaeBase {
 
 		protected TModel model;
 

@@ -12,8 +12,8 @@ namespace MvpSample {
 
 		protected override async UniTask Start() {
 			await base.Start();
-			SampleSceneModel model = new SampleSceneModel(dialogFactory);
-			presenter.Initialize(model);
+			SampleSceneUseCase useCase = new SampleSceneUseCase(dialogFactory);
+			presenter.Initialize(useCase);
 			presenter.Run();
 		}
 

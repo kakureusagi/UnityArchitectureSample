@@ -6,7 +6,7 @@ namespace MvpSample {
 
 	public class DialogFactory : MonoBehaviour, IDialogFactory {
 
-		class Factory<TModel> where TModel : DialogModelBase {
+		class Factory<TModel> where TModel : DialogUseCsaeBase {
 
 			public static string PrefabPath { get; set; }
 
@@ -26,7 +26,7 @@ namespace MvpSample {
 
 		
 		void Awake() {
-			Factory<OneButtonDialogModel>.PrefabPath = "OneButtonDialog";
+			Factory<OneButtonDialogUseCsae>.PrefabPath = "OneButtonDialog";
 		}
 
 		void IDialogFactory.Create<TModel>(TModel model) {
