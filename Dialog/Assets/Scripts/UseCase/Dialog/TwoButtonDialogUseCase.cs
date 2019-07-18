@@ -10,10 +10,10 @@ namespace MvpSample {
 
 		
 		public IObservable<Unit> OnOk => onOk;
-		private readonly Subject<Unit> onOk = new Subject<Unit>();
+		readonly Subject<Unit> onOk = new Subject<Unit>();
 		
 		public IObservable<Unit> OnCancel => onCancel;
-		private readonly Subject<Unit> onCancel = new Subject<Unit>();
+		readonly Subject<Unit> onCancel = new Subject<Unit>();
 
 		
 		public TwoButtonDialogUseCase(string title, string body) {

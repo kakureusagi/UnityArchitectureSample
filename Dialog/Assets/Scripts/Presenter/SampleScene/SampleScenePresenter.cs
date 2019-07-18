@@ -9,10 +9,10 @@ namespace MvpSample {
 	public class SampleScenePresenter : MonoBehaviour {
 		
 		[SerializeField]
-		private Button oneDialogButton;
+		Button oneDialogButton;
 		
 		[SerializeField]
-		private Button twoDialogButton;
+		Button twoDialogButton;
 
 		SampleSceneUseCase useCase;
 
