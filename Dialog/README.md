@@ -1,4 +1,4 @@
-# Sample Mvp For Dialog
+# Dialog
 
 ダイアログの表示をMVPパターンで実装してみたサンプルプロジェクト
 
