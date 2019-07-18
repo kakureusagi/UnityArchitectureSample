@@ -3,7 +3,7 @@ using UniRx;
 
 namespace MvpSample {
 
-	public class TwoButtonDialogUseCase : DialogUseCsaeBase {
+	public class TwoButtonDialogUseCase : DialogUseCaseBase {
 
 		public string Title { get; }
 		public string Body { get; }

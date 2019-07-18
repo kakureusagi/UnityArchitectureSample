@@ -6,7 +6,7 @@ namespace MvpSample {
 
 	public class DialogFactory : MonoBehaviour, IDialogFactory {
 
-		class Factory<TModel> where TModel : DialogUseCsaeBase {
+		class Factory<TModel> where TModel : DialogUseCaseBase {
 
 			public static string PrefabPath { get; set; }
 

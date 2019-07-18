@@ -1,6 +1,6 @@
 namespace MvpSample {
 
-	public class OneButtonDialogUseCase : DialogUseCsaeBase {
+	public class OneButtonDialogUseCase : DialogUseCaseBase {
 
 		public string Title { get; }
 		public string Body { get; }
